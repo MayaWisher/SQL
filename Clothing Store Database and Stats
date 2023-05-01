@@ -1,0 +1,25 @@
+I was tasked with creating a database for a Clothing store. This table shows all of the different clothing items 
+sold in this store, as well as the quantity, aisle, price and fabric of the items.
+
+CREATE TABLE store (id INTEGER PRIMARY KEY, item TEXT, quantity INTEGER, aisle INTEGER, price INTEGER, fabric TEXT);
+INSERT INTO store VALUES (1, "Men Pants", 10, 2, 40.00, "denim");
+INSERT INTO store VALUES (2, "Women Pants", 8, 3, 40.00, "denim");
+INSERT INTO store VALUES (3, "Men Shirts", 17, 1, 35.00, "cotton");
+INSERT INTO store VALUES (4, "Women Shirts", 15, 4, 35.00, "cotton");
+INSERT INTO store VALUES (5, "Skirts", 6, 3, 40.00, "silk");
+INSERT INTO store VALUES (6, "Men Socks", 20, 5, 15.00, "wool");
+INSERT INTO store Values (7, "Women socks", 20, 5, 15.00, "wool");
+INSERT INTO store VALUES (8, "Men Fancy Pants", 12, 2, 50.00, "lycra");
+INSERT INTO store VALUES (9, "Women Fancy Pants", 13, 3, 50.00, "lycra");
+INSERT INTO store VALUES (10, "Jackets", 32, 6, 85.00, "wool");
+INSERT INTO store VALUES (11, "Vests", 27, 6, 48.00, "denim");
+INSERT INTO store VALUES (12, "Bras", 22, 5, 70.00, "satin");
+INSERT INTO store VALUES (13, "Men Hats", 8, 1, 25.00, "Leather");
+INSERT INTO store VALUES (14, "Women Hats", 9, 4, 25.00, "Leather");
+INSERT INTO store VALUES (15, "Umbrellas", 15, 6, 30.00, "plastic");
+
+--what is the sum of clothing items in the store?
+SELECT * FROM store;
+SELECT SUM(quantity) FROM store;
+
+
